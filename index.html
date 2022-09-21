@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="assets/img/cat.png" alt="" />
+            <h1> <i>Jesse Leenstra</i></h1>
+        </div>
+        <div id="content">
+            <h2>Over Mij</h2>
+            <div id="intro">
+                Hallo, mijn naam is Jesse Leenstra. Ik ben geboren in Amersfoort maar ik woon bijna heel mijn leven in
+                Woudenberg.<br>
+                Hier woon ik met mijn vader, moeder en zusje.
+            </div>
+            <div id="overig">
+                Mijn hobbies zijn gamen, padellen, buiten zijn met vrienden en ik houd van skiën.
+            </div>
+            <div id="kennis">
+                <h3>Mijn kennis</h3>
+                    <li>4-5 maanden HTML ervaring</li>
+                    <li>4-5 maanden CSS ervaring</li>
+                    <li>1 maand JavaScript ervaring</li>
+                </ul>
+            </div>
+        </div>
+        <div id="experimental">
+            <p>Experimental zone</p>
+            <div class="feedback"></div>
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+                <button class="btn">Click for a surprise!</button>
+            </a>
+            <script>
+                var btn = document.querySelector(".btn");
+                var position;
+                btn.addEventListener("mouseover", function () {
+                    position ? (position = 0) : (position = 150);
+                    btn.style.transform = `translate(${position}px,0px)`;
+                    btn.style.transition = "all 0.3s ease";
+
+                });
+            </script>
+            <br>
+            <br>
+
+
+            <p>&#128512; &#128512; &#128512;</p>
+
+
+        </div>
+        <div id="footer">
+            
+            &copy; 2022
+
+            <ul>
+                <li>
+                    <a href="#" title="Instagram"><img id="instagram" src="assets/img/instagram.png" alt="Instagram" /></a>
+                </li>
+                <li>
+                    <a href="#" title="Youtube"><img id="youtube" src="assets/img/youtube.png" alt="Youtube" /></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
